@@ -1,0 +1,166 @@
+---
+title: Fumadocs UI components
+---
+
+A simple demo page for showing TinaCMS content rendered with Fumadocs UI components.
+
+## Inline TOC
+
+<InlineTOC
+  items={[
+    { title: "Cards", url: "#cards" },
+    { title: "Callout", url: "#callout" },
+    { title: "Accordian", url: "#accordian" },
+    { title: "Tabs", url: "#tabs" },
+    { title: "Steps", url: "#steps" },
+    { title: "Install Fumadocs", url: "#install-fumadocs", depth: 2 },
+    { title: "Connect TinaCMS", url: "#connect-tinacms", depth: 2 },
+    { title: "Add UI Components", url: "#add-ui-components", depth: 2 },
+    { title: "Publish the Docs", url: "#publish-the-docs", depth: 2 },
+    { title: "Files", url: "#files" },
+    { title: "Banner", url: "#banner" },
+    { title: "GitHub", url: "#github" },
+    { title: "Tina.io GitHub", url: "#tinaio-github", depth: 2 },
+    { title: "Fumadocs GitHub", url: "#fumadocs-github", depth: 2 }
+  ]}
+/>
+
+## Cards
+
+<Cards>
+  <Card title="TinaCMS" href="https://tina.io">
+    Edit docs content visually without leaving your site.
+  </Card>
+
+  <Card title="Fumadocs" href="https://fumadocs.dev">
+    Build a clean and fast documentation experience.
+  </Card>
+
+  <Card title="MDX Content">
+    Mix Markdown, React components, and structured content in one place.
+  </Card>
+</Cards>
+
+## Callout
+
+<Callout>
+  TinaCMS helps editors manage content, while Fumadocs turns it into beautiful documentation.
+</Callout>
+
+<Callout type="warn">
+  Make sure your MDX components are registered before using them in docs pages.
+</Callout>
+
+<Callout type="error">
+  Do not edit generated content files directly if TinaCMS is managing them.
+</Callout>
+
+## Accordion
+
+<Accordions type="single">
+  <Accordion title="Why use TinaCMS with Fumadocs?">
+    TinaCMS gives editors a visual editing experience, and Fumadocs gives developers a clean docs framework.
+  </Accordion>
+
+  <Accordion title="Can I still write Markdown?">
+    Yes. You can write normal Markdown and add Fumadocs UI components when needed.
+  </Accordion>
+
+  <Accordion title="Who is this good for?">
+    It works well for product docs, developer docs, internal guides, and content-heavy websites.
+  </Accordion>
+</Accordions>
+
+## Tabs
+
+<Tabs items={["Editor", "Developer", "Reader"]}>
+  <Tab value="Editor">
+    Editors can update content from TinaCMS using a friendly visual interface.
+  </Tab>
+
+  <Tab value="Developer">
+    Developers can keep docs in Git and customize the experience with React.
+  </Tab>
+
+  <Tab value="Reader">
+    Readers get a fast, clean, and searchable documentation site.
+  </Tab>
+</Tabs>
+
+## Steps
+
+<Steps>
+  <Step>
+    ### Install Fumadocs
+
+    Create your documentation site with Fumadocs.
+  </Step>
+
+  <Step>
+    ### Connect TinaCMS
+
+    Add TinaCMS so content can be edited visually.
+  </Step>
+
+  <Step>
+    ### Add UI Components
+
+    Use cards, tabs, callouts, accordions, steps, and file trees.
+  </Step>
+
+  <Step>
+    ### Publish the Docs
+
+    Commit your content and deploy the site.
+  </Step>
+</Steps>
+
+## Files
+
+<Files>
+  <Folder name="app" defaultOpen={true}>
+    <File name="page.tsx" />
+
+    <File name="layout.tsx" />
+
+    <File name="global.css" />
+  </Folder>
+
+  <Folder name="content" defaultOpen={true}>
+    <File name="index.mdx" />
+
+    <File name="components.mdx" />
+
+    <File name="getting-started.mdx" />
+  </Folder>
+
+  <Folder name="tina">
+    <File name="config.ts" />
+
+    <File name="schema.ts" />
+  </Folder>
+
+  <File name="package.json" />
+
+  <File name="source.config.ts" />
+</Files>
+
+## Banner
+
+<Banner id="" variant="normal">
+  TinaCMS + Fumadocs demo is live
+</Banner>
+
+<Banner variant="rainbow" id="dismissible-banner">
+  This is dismissible banner
+</Banner>
+
+## GitHub
+
+#### Tina.io GitHub
+
+<GithubInfo owner="tinacms" repo="tina.io" />
+
+#### Fumadocs GitHub
+
+<GithubInfo owner="fuma-nama" repo="fumadocs" />
